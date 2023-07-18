@@ -1,0 +1,40 @@
+﻿@model Заявки_на_доработку_ПО.Classes.PaginatedList<Заявки_на_доработку_ПО.Classes.Ticket>
+
+@{
+    ViewData["Title"] = "Заявки";
+}
+
+<div class="d-flex justify-content-between align-items-center">
+    <h2>Заявки</h2>
+    <a asp-action="Create" class="btn btn-success">Добавить заявку</a>
+</div>
+
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>
+                Название
+            </th>
+            <th>
+                ПО
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Описание
+            </th>
+            <th>
+                Дата окончания разработки
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<div class="pagination">
+
+</div>

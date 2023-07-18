@@ -1,0 +1,31 @@
+﻿@model Заявки_на_доработку_ПО.Classes.PaginatedList<Заявки_на_доработку_ПО.Classes.Software>
+
+@{
+    ViewData["Title"] = "ПО";
+}
+
+<div class="d-flex justify-content-between align-items-center">
+    <h2>Приложения</h2>
+    <a asp-action="Create" class="btn btn-success">Добавить ПО</a>
+</div>
+
+<table class="table table-light table-striped">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Название
+            </th>
+  
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<div class="pagination">
+
+</div>

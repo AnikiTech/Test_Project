@@ -1,0 +1,47 @@
+﻿@model Заявки_на_доработку_ПО.Classes.Ticket
+
+@{
+    ViewData["Title"] = "Детали";
+}
+
+<h2 class="text-center">Детали</h2>
+
+<div class="d-flex justify-content-center">
+    <div class="col-6">
+        <h4 class="text-center">Заявка</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Название)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Название)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+            <dt class="col-sm-4">
+                @Html.DisplayNameFor(model => model.Описание)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Описание)
+            </dd>
+            <dt class="col-sm-4 text-break">
+               
+                Дата окончания разработки
+            </dt>
+
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.ДатаОкончанияРазработки)
+            </dd>
+
+        </dl>
+    </div>
+</div>
+<div class="text-center">
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Изменить</a> |
+    <a asp-action="Index" class="btn btn-secondary">Вернуться к списку</a>
+</div>

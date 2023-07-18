@@ -1,0 +1,17 @@
+﻿@model Заявки_на_доработку_ПО.Classes.Software
+
+<h2>Редактировать</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Название" class="control-label"></label>
+        <input asp-for="Название" class="form-control" />
+        <span asp-validation-for="Название" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Сохранить" class="btn btn-primary" />
+    </div>
+</form>
+
+<a asp-action="Index">Назад к списку</a>
